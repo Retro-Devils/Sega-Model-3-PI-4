@@ -18,7 +18,7 @@ https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-game
  WORK IN PRGORESS
  
  
-EVERYTHING BELOW IS TAKEN FROM 
+##!! EVERYTHING BELOW IS TAKEN FROM !!##
 
 https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-games-to-your-pi4/
 
@@ -63,6 +63,17 @@ I’ve made a small edit to the emulators source code so that you can alter the 
 
 If you want to set these (exiting the emulator is set to the escape key by default) open /opt/retropie/emulators/supermodel/bin/Config/Supermodel.ini in a text editor and set the inputs for these to the ones your prefer (if you’re unsure of which button number corresponds to which physical button, check the inputs you’ve already set. You can also use a ‘+’ between two inputs to set multi button combos.)
 
+
+
+## A Note On Running Games
+
+First things first, when loading a game for the first time remember to open the run command menu (press b while the game’s loading) and set an appropriate video mode. I like to keep things in the original aspect ratio, so I use 87-46 to it in 4:3 and close to the Model 3 native res.
+
+In order to get the games running at a decent speed, I’ve included a number of per-game optimisations to the speed of the Model 3’s emulated CPU. 
+
+Depending on the game, some will see a huge increase in frame rate if we simply stop emulating idle CPU cycles, while later games that required the ‘step 1.5’ ‘step 2’ hardware will need to run faster than the default 60hz. 
+
+If you want to play around with these per-game optimisations yourself, simply download and edit the ‘PowerPCFrequency’ setting next to the relevant title in the supermodel.ini file
 
 
 

@@ -18,13 +18,15 @@ https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-game
  WORK IN PRGORESS
  
  
-##!! EVERYTHING BELOW IS TAKEN FROM !!##
+## Mecha Fat Nick's Notes 
+
+everything below taken from . 
 
 https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-games-to-your-pi4/
 
 
 
-## Adding Artwork
+# Adding Artwork
 
 I can’t give you complete guidance here as some themes are setup differently to others.
 

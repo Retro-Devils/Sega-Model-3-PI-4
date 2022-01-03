@@ -1,6 +1,6 @@
 # Sega Model 3
 
-## Howd we do this ?
+## How did we do this ?
 
 One line installer made with this tutorial. Props and credit to author. 
 
@@ -33,6 +33,36 @@ To change it look inside the folder. You should see a file called something like
 You can download a custom Model3 logo from here. Simply rename it so it has the same name as the MAME image you’ve found and overwrite it.
 
 Now, upload the model3 folder you’ve created to your pi’s theme folder and you should be good to go.
+
+## Adding Games
+
+Addd your games to ~/RetroPie/roms/model3 
+
+
+## Working Games List 
+
+WORK IN PROGRESS 
+
+
+## Configuring the Controls
+
+Supermodel has deep control customisations that allow you to set up controls for all games that have custom features. to configure inputs, plug a usb keyboard into your Pi (if you haven’t already) and type:
+
+cd /opt/retropie/emulators/supermodel/bin ./supermodel -config-inputs
+
+Follow the onscreen prompts to set the inputs to a controller of your choice. Please note that for racing games etc you’ll be able to set both generic gear up/gear down controls AND the option to change to different individual gears in individual games.
+
+
+When you exit it should return you to the command prompt. 
+
+I’ve made a small edit to the emulators source code so that you can alter the controls for exiting the emulator, taking screenshots, pausing games and messing with save states to give a more retroarch-like experience. 
+
+If you want to set these (exiting the emulator is set to the escape key by default) open /opt/retropie/emulators/supermodel/bin/Config/Supermodel.ini in a text editor and set the inputs for these to the ones your prefer (if you’re unsure of which button number corresponds to which physical button, check the inputs you’ve already set. You can also use a ‘+’ between two inputs to set multi button combos.)
+
+
+
+
+
 
 
  

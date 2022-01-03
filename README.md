@@ -13,8 +13,17 @@ https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-game
 
  curl -sSL https://git.io/JS6DW | bash
  
+ ## Working Games List 
+ 
+ WORK IN PRGORESS
  
  
+EVERYTHING BELOW IS TAKEN FROM 
+
+https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-games-to-your-pi4/
+
+
+
 ## Adding Artwork
 
 I can’t give you complete guidance here as some themes are setup differently to others.
@@ -37,11 +46,6 @@ Now, upload the model3 folder you’ve created to your pi’s theme folder and y
 ## Adding Games
 
 Addd your games to ~/RetroPie/roms/model3 
-
-
-## Working Games List 
-
-WORK IN PROGRESS 
 
 
 ## Configuring the Controls

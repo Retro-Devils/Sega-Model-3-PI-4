@@ -1,13 +1,22 @@
 #!/bin/bash
 echo "Sega Model 3 Installer By The Retro Devils "
 sleep 5
-echo "Installing/Checking For Dependenciez" 
+echo "
+-------------------------------------
+Installing/Checking For Dependencies
+-------------------------------------" 
 sleep 1
 echo "Installing P7zip"
 sudo apt-get install  p7zip
-echo "Install Finished"
+echo "
+-----------------------------
+Dependencies Install Finished
+-----------------------------"
 sleep 2
-echo "Beginning Sega Model 3 Install"
+echo "
+-------------------------------
+Beginning Sega Model 3 Install
+-------------------------------"
 sleep 2 
 cd /opt/retropie/emulators
 sudo wget https://mechafatnick.co.uk/CompiledEmus/SuperModel/supermodel.zip 
@@ -24,7 +33,10 @@ chmod 755 -R /home/pi/Config
 sudo mkdir ~/RetroPie/roms/model3
 echo "Model 3 Install Complete"
 sleep 2
-echo "For Sega Model 3 To Show In Retropie
+echo "
+-------------------------------------
+For Sega Model 3 To Show In Retropie
+-------------------------------------
 Please Add Below To ~/.emuationstation/es-systems.cfg
 <system> 
   <name>model3</name> 
@@ -35,7 +47,11 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <platform>arcade</platform> 
   <theme>model3</theme> 
   <directlaunch/> 
-</system>"
+</system>
+
+________________________________________
+Add Your Roms To ~/RetroPie/roms/model3/
+----------------------------------------"
 
 echo "Drugs are bad mmmkay " 
 sleep 2

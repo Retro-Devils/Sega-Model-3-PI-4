@@ -1,5 +1,8 @@
 #!/bin/bash
-echo "Sega Model 3 Installer By The Retro Devils "
+echo "
+___________________________________________
+Sega Model 3 Installer By The Retro Devils
+___________________________________________"
 sleep 5
 echo "
 -------------------------------------

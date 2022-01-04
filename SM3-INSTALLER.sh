@@ -49,7 +49,7 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <directlaunch/> 
 </system>
 
-________________________________________
+----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/
 ----------------------------------------"
 

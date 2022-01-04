@@ -10,7 +10,7 @@ sleep 2
 echo "Beginning Sega Model 3 Install"
 sleep 2 
 cd /opt/retropie/emulators
-wget https://mechafatnick.co.uk/CompiledEmus/SuperModel/supermodel.zip 
+sudo wget https://mechafatnick.co.uk/CompiledEmus/SuperModel/supermodel.zip 
 p7zip supermodel.zip 
 cd ~/
 ln -s 

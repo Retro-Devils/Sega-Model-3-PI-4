@@ -7,7 +7,7 @@ echo "Installing P7zip"
 sudo apt-get install  p7zip
 echo "Install Finished"
 sleep 2
-echo"Beginning Sega Model 3 Install"
+echo "Beginning Sega Model 3 Install"
 sleep 2 
 cd /opt/retropie/emulators
 wget https://mechafatnick.co.uk/CompiledEmus/SuperModel/supermodel.zip 

@@ -8,8 +8,6 @@ echo "
 -------------------------------------
 Installing/Checking For Dependencies
 -------------------------------------" 
- For Dependencies
--------------------------------------" 
 sleep 1
 echo "Installing unzip"
 sudo apt-get install  unzip

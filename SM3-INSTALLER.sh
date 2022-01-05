@@ -8,19 +8,16 @@ echo "
 -------------------------------------
 Installing/Checking For Dependencies
 -------------------------------------" 
+ For Dependencies
+-------------------------------------" 
 sleep 1
-echo "Installing P7zip"
-sudo apt-get install  p7zip
+echo "Installing unzip"
+sudo apt-get install  unzip
 echo "
 -----------------------------
 Dependencies Install Finished
 -----------------------------"
 sleep 2
-echo "
--------------------------------
-Beginning Sega Model 3 Install
--------------------------------"
-sleep 2 
 cd /opt/retropie/emulators
 sudo wget https://mechafatnick.co.uk/CompiledEmus/SuperModel/supermodel.zip 
 p7zip supermodel.zip 
@@ -36,8 +33,9 @@ chmod 755 -R /home/pi/Config
 sudo mkdir ~/RetroPie/roms/model3
 echo "Model 3 Install Complete"
 sleep 2
+
 echo "
--------------------------------------
+-----------------------------------
 For Sega Model 3 To Show In Retropie
 -------------------------------------
 Please Add Below To ~/.emuationstation/es-systems.cfg

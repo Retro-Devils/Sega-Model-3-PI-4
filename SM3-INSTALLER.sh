@@ -33,7 +33,6 @@ chmod 755 -R /home/pi/Config
 sudo mkdir ~/RetroPie/roms/model3
 echo "Model 3 Install Complete"
 sleep 2
-
 echo "
 -----------------------------------
 For Sega Model 3 To Show In Retropie

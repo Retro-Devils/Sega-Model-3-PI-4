@@ -9,8 +9,8 @@ echo "
 Installing/Checking For Dependencies
 -------------------------------------" 
 sleep 1
-echo "Installing P7zip"
-sudo apt-get install  p7zip
+echo "Installing unzip"
+sudo apt-get install  unzip
 echo "
 -----------------------------
 Dependencies Install Finished
@@ -23,19 +23,16 @@ Beginning Sega Model 3 Install
 sleep 2 
 cd /opt/retropie/emulators
 sudo wget https://mechafatnick.co.uk/CompiledEmus/SuperModel/supermodel.zip 
-p7zip supermodel.zip 
+sudo unzip supermodel.zip 
 cd ~/
-ln -s 
-/opt/retropie/emulators/supermodel/bin/Config
-Config 
-ln -s 
-/opt/retropie/emulators/supermodel/bin/NVRAM
-NVRAM
-chmod 755 -R /opt/retropie/emulators/supermodel/bin 
-chmod 755 -R /home/pi/Config
-sudo mkdir ~/RetroPie/roms/model3
+ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
+ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
+sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 
+sudo chmod 755 -R /home/pi/Config
+mkdir ~/RetroPie/roms/model3
 echo "Model 3 Install Complete"
 sleep 2
+sudo rm -f /opt/retropie/emulators/supermodel.zip
 echo "
 -------------------------------------
 For Sega Model 3 To Show In Retropie

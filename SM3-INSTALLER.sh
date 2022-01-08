@@ -48,7 +48,8 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <platform>arcade</platform> 
   <theme>model3</theme> 
   <directlaunch/> 
-</system>"
+</system>
+"
 sleep 5
 ----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/

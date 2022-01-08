@@ -12,8 +12,8 @@ echo "
 Installing/Checking For Dependencies
 -------------------------------------" 
 sleep 1
-echo "Installing unzip"
-sudo apt-get install  unzip
+echo "Installing P7Zip"
+sudo apt-get install  p7zip
 echo "
 -----------------------------
 Dependencies Install Finished
@@ -21,7 +21,7 @@ Dependencies Install Finished
 sleep 2
 cd /opt/retropie/emulators
 sudo wget https://archive.org/download/DB-EMUS/supermodel.7z
-sudo unzip supermodel.7z
+sudo p7zip supermodel.7z
 cd ~/
 ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
 ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM

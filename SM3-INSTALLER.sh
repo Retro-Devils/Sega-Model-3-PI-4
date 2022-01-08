@@ -28,17 +28,17 @@ ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
 sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 
 sudo chmod 755 -R /home/pi/Config
 mkdir ~/RetroPie/roms/model3
-echo"
+echo "
 --------------------------------
  Model 3 Install Complete
 --------------------------------"
 sleep 2
 sudo rm -f /opt/retropie/emulators/supermodel.7z
-echo"
+echo "
 -------------------------------------
 For Sega Model 3 To Show In Retropie
 -------------------------------------"
-echo"
+echo "
 Please Add Below To ~/.emuationstation/es-systems.cfg
 <system> 
   <name>model3</name> 

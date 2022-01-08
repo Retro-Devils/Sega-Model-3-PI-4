@@ -1,6 +1,8 @@
-# Sega Model 3
+# Sega Model 3 Installer
 
 # Version #1.1
+
+# Built For RPI 4
 
 ## How did we do this ?
 

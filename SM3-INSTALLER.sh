@@ -35,7 +35,7 @@ echo "Adding Lightgun Support "
 --------------------------------
 sleep 2
 cd /opt/retropie/emulators/supermodel/bin/Config
-sudo rm -R Supermodel.ini
+sudo rm Supermodel.ini
 sudo wget https://github.com/Retro-Devils/Sega-Model-3-PI-4/blob/main/Supermodel.ini
 -------------------------------------
 For Sega Model 3 To Show In Retropie
@@ -61,5 +61,6 @@ echo "Drugs are bad mmmkay "
 sleep 2
 echo "Thanks for using have a wonderful and retro day" 
 sleep 5
+
 
 

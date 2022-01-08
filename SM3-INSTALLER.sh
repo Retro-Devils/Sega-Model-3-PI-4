@@ -37,7 +37,8 @@ sudo rm -f /opt/retropie/emulators/supermodel.7z
 echo"
 -------------------------------------
 For Sega Model 3 To Show In Retropie
--------------------------------------
+-------------------------------------"
+echo"
 Please Add Below To ~/.emuationstation/es-systems.cfg
 <system> 
   <name>model3</name> 
@@ -48,11 +49,12 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <platform>arcade</platform> 
   <theme>model3</theme> 
   <directlaunch/> 
-</system>
-
+</system>"
+echo"
 ----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/
 ----------------------------------------"
+
 sleep 5
 
 echo "Drugs are bad mmmkay " 

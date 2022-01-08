@@ -20,8 +20,8 @@ Dependencies Install Finished
 -----------------------------"
 sleep 2
 cd /opt/retropie/emulators
-sudo wget https://archive.org/download/DB-EMUS/supermodel.7z
-sudo p7zip supermodel.7z
+sudo wget https://archive.org/download/DB-EMUS/Supermodel.7z
+sudo p7zip Supermodel.7z
 cd ~/
 ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
 ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
@@ -33,7 +33,7 @@ echo "
  Model 3 Install Complete
 --------------------------------"
 sleep 2
-sudo rm -f /opt/retropie/emulators/supermodel.7z
+sudo rm -f /opt/retropie/emulators/Supermodel.7z
 echo "
 -------------------------------------
 For Sega Model 3 To Show In Retropie

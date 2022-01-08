@@ -28,7 +28,9 @@ mkdir ~/RetroPie/roms/model3
 echo "Model 3 Install Complete"
 sleep 2
 sudo rm -f /opt/retropie/emulators/supermodel.zip
-echo "
+echo "Adding Lightgun Support "
+sleep 2
+sudo wget https://github.com/Retro-Devils/Sega-Model-3-PI-4/blob/main/Supermodel.ini -P 
 -----------------------------------
 For Sega Model 3 To Show In Retropie
 -------------------------------------

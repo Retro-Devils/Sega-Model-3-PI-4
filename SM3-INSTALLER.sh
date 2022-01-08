@@ -30,7 +30,7 @@ sudo chmod 755 -R /home/pi/Config
 mkdir ~/RetroPie/roms/model3
 echo"
 --------------------------------
- Model 3 Install Complete"
+ Model 3 Install Complete
 --------------------------------"
 sleep 2
 sudo rm -f /opt/retropie/emulators/supermodel.7z
@@ -48,11 +48,12 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <platform>arcade</platform> 
   <theme>model3</theme> 
   <directlaunch/> 
-</system>"
-sleep 5
+</system>
+
 ----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/
 ----------------------------------------"
+sleep 5
 
 echo "Drugs are bad mmmkay " 
 sleep 2

@@ -1,9 +1,12 @@
 #!/bin/bash
 echo "
-___________________________________________
+_____________________________________________
 Sega Model 3 Installer By The Retro Devils
-___________________________________________"
-sleep 5
+_____________________________________________
+Built For Pi 4 Press Control+C to cancel Now
+_____________________________________________"
+
+sleep 6
 echo "
 -------------------------------------
 Installing/Checking For Dependencies
@@ -17,7 +20,7 @@ Dependencies Install Finished
 -----------------------------"
 sleep 2
 cd /opt/retropie/emulators
-sudo wget https://mechafatnick.co.uk/CompiledEmus/SuperModel/supermodel.zip 
+sudo wget https://archive.org/download/DB-EMUS/supermodel.7z
 sudo unzip supermodel.zip 
 cd ~/
 ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
@@ -25,18 +28,13 @@ ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
 sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 
 sudo chmod 755 -R /home/pi/Config
 mkdir ~/RetroPie/roms/model3
+echo"
 --------------------------------
-echo "Model 3 Install Complete"
---------------------------------
+ Model 3 Install Complete"
+--------------------------------"
 sleep 2
-sudo rm -f /opt/retropie/emulators/supermodel.zip
---------------------------------
-echo "Adding Lightgun Support "
---------------------------------
-sleep 2
-cd /opt/retropie/emulators/supermodel/bin/Config
-sudo rm Supermodel.ini
-sudo wget https://github.com/Retro-Devils/Sega-Model-3-PI-4/blob/main/Supermodel.ini
+sudo rm -f /opt/retropie/emulators/supermodel.7z
+echo"
 -------------------------------------
 For Sega Model 3 To Show In Retropie
 -------------------------------------

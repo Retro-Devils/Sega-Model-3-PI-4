@@ -50,7 +50,7 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <theme>model3</theme> 
   <directlaunch/> 
 </system>"
-echo"
+echo "
 ----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/
 ----------------------------------------"

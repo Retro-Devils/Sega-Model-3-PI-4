@@ -25,13 +25,19 @@ ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
 sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 
 sudo chmod 755 -R /home/pi/Config
 mkdir ~/RetroPie/roms/model3
+--------------------------------
 echo "Model 3 Install Complete"
+--------------------------------
 sleep 2
 sudo rm -f /opt/retropie/emulators/supermodel.zip
+--------------------------------
 echo "Adding Lightgun Support "
+--------------------------------
 sleep 2
-sudo wget https://github.com/Retro-Devils/Sega-Model-3-PI-4/blob/main/Supermodel.ini -P 
------------------------------------
+cd /opt/retropie/emulators/supermodel/bin/Config
+sudo rm -R Supermodel.ini
+sudo wget https://github.com/Retro-Devils/Sega-Model-3-PI-4/blob/main/Supermodel.ini
+-------------------------------------
 For Sega Model 3 To Show In Retropie
 -------------------------------------
 Please Add Below To ~/.emuationstation/es-systems.cfg
@@ -46,6 +52,7 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <directlaunch/> 
 </system>
 
+sleep 5
 ----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/
 ----------------------------------------"

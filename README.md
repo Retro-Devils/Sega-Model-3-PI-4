@@ -7,6 +7,9 @@ One line installer made with this tutorial. Props and credit to author.
 https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-games-to-your-pi4/
 
 
+
+We took his emu made for pi 4 added Lightgun support and reduploaded to new server as backup.
+
 ## Install 
 
 -in retropie press f4 and type 

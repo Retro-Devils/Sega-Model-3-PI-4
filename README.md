@@ -1,5 +1,7 @@
 # Sega Model 3
 
+# Version #1.1
+
 ## How did we do this ?
 
 One line installer made with this tutorial. Props and credit to author. 
@@ -12,9 +14,11 @@ We took his emu made for pi 4 added Lightgun support and reduploaded to new serv
 
 ## Install 
 
--in retropie press f4 and type 
+- In retropie press f4 and type 
 
  curl -sSL https://git.io/JSDOy | bash
+ 
+ -Installer will do everything it can and instuct you on the rest .
  
  ## Working Games List 
  

@@ -28,7 +28,8 @@ sudo p7zip -d  Supermodel.7z
 cd /opt/retropie/configs
 sudo wget https://archive.org/download/DB-EMUS/Sega3-ES-Config.zip
 sudo unzip Sega3-ES-Config.zip
-sudo ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
+cd ~/
+sudo ln -s /opt/retropie/emulators/supermodel/bin/Config ~/Config 
 sudo ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
 sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 
 sudo chmod 755 -R /home/pi/Config

@@ -21,7 +21,7 @@ Dependencies Install Finished
 sleep 2
 cd /opt/retropie/emulators
 sudo wget https://archive.org/download/DB-EMUS/Supermodel.7z
-sudo p7zip Supermodel.7z
+sudo p7zip -d  Supermodel.7z
 cd ~/
 ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
 ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM

@@ -13,6 +13,8 @@ Installing/Checking For Dependencies
 sleep 1
 echo "Installing P7Zip"
 sudo apt-get install  p7zip
+echo "Installing unzip"
+sudo apt-get unstall unzip
 echo "
 -----------------------------
 Dependencies Install Finished
@@ -25,7 +27,10 @@ echo "
 cd /opt/retropie/emulators
 sudo wget https://archive.org/download/DB-EMUS/Supermodel.7z
 sudo p7zip -d  Supermodel.7z
-cd ~/
+cd /opt/retropie/configs
+sudo wget https://archive.org/download/DB-EMUS/Sega3-ES-Config.zip
+sudo unzip Sega3-ES-Config.zip
+
 sudo ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
 sudo ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
 sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 

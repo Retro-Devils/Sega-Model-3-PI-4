@@ -2,6 +2,8 @@
 echo "
 _____________________________________________
 Sega Model 3 Installer By The Retro Devils
+
+Version 1.1
 _____________________________________________
 Built For Pi 4 Press Control+C to cancel Now
 _____________________________________________"

@@ -19,6 +19,10 @@ echo "
 Dependencies Install Finished
 -----------------------------"
 sleep 2
+echo "
+--------------------------------
+ Begin Model 3 Install 
+--------------------------------"
 cd /opt/retropie/emulators
 sudo wget https://archive.org/download/DB-EMUS/Supermodel.7z
 sudo p7zip -d  Supermodel.7z

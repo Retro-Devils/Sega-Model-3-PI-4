@@ -12,7 +12,7 @@ https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-game
 
 
 
-We took his emu made for pi 4 added Lightgun support and reuploaded to new server as backup.
+We took his emu and config files optimized for pi 4 added Lightgun support and reuploaded to new server as backup.
 
 ## Install 
 

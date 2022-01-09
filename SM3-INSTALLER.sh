@@ -4,9 +4,8 @@ Sega Model 3 Installer By The Retro Devils
 Version 1.1"
 echo " Built For Pi 4 Press Control+C to cancel Now
 -------------------------------------"
-sleep 6
+sleep 5
 echo "
--------------------------------------
 Installing/Checking For Dependencies
 -------------------------------------" 
 sleep 1

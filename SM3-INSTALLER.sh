@@ -1,9 +1,7 @@
 #!/bin/bash
 echo "
 _____________________________________________
-Sega Model 3 Installer By The Retro Devils"
-
-echo"
+Sega Model 3 Installer By The Retro Devils
 Version 1.1"
 
 echo"

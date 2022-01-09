@@ -30,8 +30,8 @@ cd /opt/retropie/emulators
 sudo wget https://archive.org/download/DB-EMUS/Supermodel.7z
 sudo p7zip -d  Supermodel.7z
 cd ~/
-ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
-ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
+sudo ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
+sudo ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
 sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 
 sudo chmod 755 -R /home/pi/Config
 mkdir ~/RetroPie/roms/model3

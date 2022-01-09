@@ -12,7 +12,7 @@ sleep 1
 echo "Installing P7Zip"
 sudo apt-get install  p7zip
 echo "Installing unzip"
-sudo apt-get unstall unzip
+sudo apt-get install unzip
 echo "
 -----------------------------
 Dependencies Install Finished

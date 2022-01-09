@@ -1,9 +1,12 @@
 #!/bin/bash
 echo "
 _____________________________________________
-Sega Model 3 Installer By The Retro Devils
+Sega Model 3 Installer By The Retro Devils"
 
-Version 1.1
+echo"
+Version 1.1"
+
+echo"
 _____________________________________________
 Built For Pi 4 Press Control+C to cancel Now
 _____________________________________________"

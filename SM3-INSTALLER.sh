@@ -10,9 +10,11 @@ Installing/Checking For Dependencies
 -------------------------------------" 
 sleep 1
 echo "Installing P7Zip"
-sudo apt-get install  p7zip
+sudo apt-get install -y p7zip
 echo "Installing unzip"
-sudo apt-get install unzip
+sudo apt-get install -y unzip
+echo "Installing LibSDl2-Net"
+sudo apt-get install -y libsdl2-net-dev
 echo "
 -----------------------------
 Dependencies Install Finished

@@ -40,6 +40,7 @@ echo "
 --------------------------------"
 sleep 2
 sudo rm -f /opt/retropie/emulators/Supermodel.7z
+sudo rm -f /opt/retropie/configs/Sega3-ES-Config.zip
 echo "
 -------------------------------------
 For Sega Model 3 To Show In Retropie

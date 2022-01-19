@@ -36,7 +36,13 @@ sudo ln -s /opt/retropie/emulators/supermodel/bin/NVRAM NVRAM
 sudo chmod 755 -R /opt/retropie/emulators/supermodel/bin 
 sudo chmod 755 -R ~/Config
 mkdir ~/RetroPie/roms/model3
+sleep 1
+sudo rm -r ~/Config/Games.xml 
+sudo rm -r /opt/retropie/emulators/supermodel/bin/Config/Games.xml
+sleep 1
 sudo wget https://archive.org/download/DB-EMUS/Games.xml -P ~/Config/
+sudo cp ~/Config/Games.xml /opt/retropie/emulators/supermodel/bin/Config/
+sleep 1 
 echo "
 --------------------------------
  Model 3 Install Complete

@@ -1,8 +1,6 @@
-# Sega Model 3 Installer
+# Sega Model 3 Standalone  Installer Version #1.1
 
-# Version #1.1
-
-# Built For RPI 4
+Built For RetroPie on RPI 4
 
 ## How did we do this ?
 

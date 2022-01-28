@@ -1,5 +1,11 @@
 #!/bin/bash
-echo "_____________________________________________
+
+brst="$(tput sgr0)"
+fgred="${rst}$(tput setaf 1)" # Red
+bld="$(tput bold)"
+bfgred="${bld}$(tput setaf 1)"
+
+echo  ${bld}$(tput setaf 1) "_____________________________________________
 Sega Model 3 Installer By The Retro Devils
 Version 1.1"
 echo " Built For Pi 4 Press Control+C to cancel Now

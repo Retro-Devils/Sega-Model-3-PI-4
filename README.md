@@ -4,13 +4,13 @@ Built For RetroPie on RPI 4
 
 ## How did we do this ?
 
-# One line installer made with this tutorial. Props and credit to author. 
+* One line installer made with this tutorial. Props and credit to author. *
 
 https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-games-to-your-pi4/
 
 We took his emu and config files optimized for pi 4 added Lightgun support and reuploaded to new server as backup.
 
-# Alternative method use RetroPie Extras od Devils Extras to install .
+* Alternative method use RetroPie Extras od Devils Extras to install . *
 
 ## Install 
 

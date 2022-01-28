@@ -8,9 +8,7 @@
 
     https://mechafatnick.co.uk/2021/06/13/becoming-a-super-model-adding-model-3-games-to-your-pi4/
 
-    We took his emu and config files optimized for pi 4 added Lightgun support and reuploaded to new server as backup.
-
-* Alternative method use RetroPie Extras od Devils Extras to install . 
+    We took his emu and config files optimized for pi 4 added Lightgun support and reuploaded to new server as backup. 
 
 ## Install 
 
@@ -23,7 +21,7 @@
  ## Working Games List 
  
  WORK IN PRGORESS
- 
+
  
 ## Mecha Fat Nick's Notes 
 
@@ -85,7 +83,11 @@ Depending on the game, some will see a huge increase in frame rate if we simply 
 If you want to play around with these per-game optimisations yourself, simply download and edit the ‘PowerPCFrequency’ setting next to the relevant title in the supermodel.ini file
 
 
+# Alternative Methods
 
+* RetroPie Extras                  https://github.com/Exarkuniv/RetroPie-Extra
+
+* Devils Extras                   https://github.com/Retro-Devils/Devils-Extra
 
 
 

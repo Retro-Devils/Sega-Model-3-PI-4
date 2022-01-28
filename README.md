@@ -59,7 +59,9 @@ Addd your games to ~/RetroPie/roms/model3
 
 Supermodel has deep control customisations that allow you to set up controls for all games that have custom features. to configure inputs, plug a usb keyboard into your Pi (if you haven’t already) and type:
 
-cd /opt/retropie/emulators/supermodel/bin ./supermodel -config-inputs
+cd /opt/retropie/emulators/supermodel/bin 
+
+./supermodel -config-inputs
 
 Follow the onscreen prompts to set the inputs to a controller of your choice. Please note that for racing games etc you’ll be able to set both generic gear up/gear down controls AND the option to change to different individual gears in individual games.
 

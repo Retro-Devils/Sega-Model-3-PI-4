@@ -5,11 +5,26 @@ fgred="${rst}$(tput setaf 1)" # Red
 bld="$(tput bold)"
 bfgred="${bld}$(tput setaf 1)"
 
-echo  ${bld}$(tput setaf 1) "_____________________________________________
-Sega Model 3 Installer By The Retro Devils
-Version 1.1"
-echo " Built For Pi 4 Press Control+C to cancel Now
--------------------------------------"
+function sm3_menu() {
+    local choice
+
+    while true; do
+        choice=$(dialog --backtitle "$BACKTITLE" --title "SEGA MODEL 3 INSTALLER V1.2 " \
+            --ok-label Select --cancel-label Exit-Installer \
+            --menu "MODEL 3 INSTALLER" 25 40 40 \
+            1 "Install/Update Devils Box " \
+            2 "Devils Box Info   " \
+            2>&1 > /dev/tty)
+
+        case "$choice" in
+            1) install_sm3  ;;
+            2) info_sm3     ;;
+            *) break       ;;
+        esac
+    done
+}
+
+function install_sm3
 sleep 5
 echo "
 Installing/Checking For Dependencies
@@ -31,10 +46,10 @@ echo "
  Begin Model 3 Install 
 --------------------------------"
 cd /opt/retropie/emulators
-sudo wget https://archive.org/download/DB-EMUS/Supermodel.7z
+sudo wget https://archive.org/download/DB-EMUS/Model%203/Supermodel.7z
 sudo p7zip -d  Supermodel.7z
 cd /opt/retropie/configs
-sudo wget https://archive.org/download/DB-EMUS/Sega3-ES-Config.zip
+sudo wget https://archive.org/download/DB-EMUS/Model%203/Sega3-ES-Config.zip
 sudo unzip Sega3-ES-Config.zip
 cd ~/
 sudo ln -s /opt/retropie/emulators/supermodel/bin/Config Config 
@@ -56,11 +71,10 @@ echo "
 sleep 2
 sudo rm -f /opt/retropie/emulators/Supermodel.7z
 sudo rm -f /opt/retropie/configs/Sega3-ES-Config.zip
-echo "
+dialog  --sleep 1 --title "SM3 EXIT MESSAGE" --msgbox " 
 -------------------------------------
 For Sega Model 3 To Show In Retropie
--------------------------------------"
-echo "
+-------------------------------------
 Please Add Below To ~/.emuationstation/es-systems.cfg
 <system> 
   <name>model3</name> 
@@ -71,18 +85,21 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
   <platform>arcade</platform> 
   <theme>model3</theme> 
   <directlaunch/> 
-</system>"
-echo "
+</system>
 ----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/
-----------------------------------------"
-
+----------------------------------------" 0 0
 sleep 5
 
 echo "Drugs are bad mmmkay " 
 sleep 2
 echo "Thanks for using have a wonderful and retro day" 
 sleep 5
+}
+
+function info_sm3(){
+
+}
 
 
-
+sm3_menu

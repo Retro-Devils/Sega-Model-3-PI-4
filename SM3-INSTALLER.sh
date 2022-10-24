@@ -67,41 +67,51 @@ sleep 1
 sudo wget https://archive.org/download/DB-EMUS/Games.xml -P ~/Config/
 sudo cp ~/Config/Games.xml -f /opt/retropie/emulators/supermodel/bin/Config/
 sleep 1 
+sudo rm -f /opt/retropie/emulators/Supermodel.7z
+sudo rm -f /opt/retropie/configs/Sega3-ES-Config.zip
 echo "
 --------------------------------
  Model 3 Install Complete
 --------------------------------"
-sleep 2
-sudo rm -f /opt/retropie/emulators/Supermodel.7z
-sudo rm -f /opt/retropie/configs/Sega3-ES-Config.zip
+    local choice
+
+    while true; do
+        choice=$(dialog --backtitle "$BACKTITLE" --title "SM3 EXIT OPTIONS " \
+            --ok-label Select --cancel-label Exit-Installer \
+            --menu "EDIT ES SYSTEMS.CFG ??" 25 40 40 \
+            1 "YES EDIT /home/.emulationstation/es_system.cfg " \
+            2 "NO DO NOT EDIT my file" \
+            2>&1 > /dev/tty)
+
+        case "$choice" in
+            1) edit-systemslist ;;
+            2) finish-sm3    ;;
+            *) break       ;;
+        esac
+    done
+}
+
+function edit-systemslist(){ 
 if [ ! -s "$HOME/.emulationstation/es_systems.cfg" ]; then sudo rm -f $HOME/.emulationstation/es_systems.cfg; fi
 if [ ! -f "$HOME/.emulationstation/es_systems.cfg" ]; then cp $HOME/.emulationstation/es_systems.cfg $HOME/RetroPie/retropiemenu/gamelist.xml; fi
-CONTENT1="\t<system>\n\t\t<path>./Devils-Box.sh</path>\n\t\t<name>Devils-Box</name>\n\t\t<desc>The Retro Devils Tool Box - A fully fuctional script to get even the newbies started up with ease, able to download roms and artwork to their proper places, Mugen and Sega Model 3 emulators, themes and music tools, plus much, much more.</desc>\n\t\t<image>./icons/Devils-Box.png</image>\n\t\t<releasedate>20220105T173842</releasedate>\n\t\t<developer>The Retro Devils</developer>\n\t\t<publisher>The Retro Devils</publisher>\n\t\t<genre>Devils-Box Script</genre>\n\t</game>"
+CONTENT1="\t<system>\n\t\t  <name>model3</name>\n\t\t  <fullname>Sega Model 3</fullname> \n\t\t  <path>/home/pi/RetroPie/roms/model3</path> \n\t\t  <extension>.zip .ZIP</extension> \n\t\t<command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ model3 %ROM%</command> \n\t\t  <platform>model3</platform> \n\t\t  <theme>model3</theme> \n\t\t</system>"
 C1=$(echo $CONTENT1 | sed 's/\//\\\//g')
-if grep -q Devils-Box.sh "$HOME/.emulationstation/es_systems.cfg"; then echo "es_systems.xml entry confirmed"
+if grep -q model3 "$HOME/.emulationstation/es_systems.cfg"; then echo "es_systems.cfg entry confirmed"
 else
-	sed "/<\/gameList>/ s/.*/${C1}\n&/" $HOME/RetroPie/retropiemenu/gamelist.xml > $HOME/temp
-	cat $HOME/temp > $HOME/RetroPie/retropiemenu/gamelist.xml
+	sed "/<\/gameList>/ s/.*/${C1}\n&/" $HOME/.emulationstation/es_systems.cfg > $HOME/temp
+	cat $HOME/temp > $HOME/.emulationstation/es_systems.cfg
 	rm -f $HOME/temp
 fi
+}
+
+function finisH_sm3(){
 dialog  --sleep 1 --title "SM3 EXIT MESSAGE" --msgbox " 
--------------------------------------
-For Sega Model 3 To Show In Retropie
--------------------------------------
-Please Add Below To ~/.emuationstation/es-systems.cfg
-<system> 
-  <name>model3</name> 
-  <fullname>Sega Model 3</fullname> 
-  <path>/home/pi/RetroPie/roms/model3</path> 
-  <extension>.zip .ZIP</extension> 
-<command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ model3 %ROM%</command> 
-  <platform>arcade</platform> 
-  <theme>model3</theme> 
-  <directlaunch/> 
-</system>
-----------------------------------------
-Add Your Roms To ~/RetroPie/roms/model3/
-----------------------------------------" 0 0
+THANKS FOR INSTALLING 
+ADD YOUR ROMS TO HOME/PI/RETROPIE/ROMS/MODEL3
+YOU WILL HAVE TO MANUALLY EDIT ES SYSTEMS.CFG
+
+ENJOY
+PLEASE REPORT ERRORS TO RETRO DEVILS " 0 0
 }
 
 function info_sm3(){

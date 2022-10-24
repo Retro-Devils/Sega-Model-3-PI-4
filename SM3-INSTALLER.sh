@@ -14,11 +14,20 @@ function sm3_menu() {
             --menu "MODEL 3 INSTALLER" 25 40 40 \
             1 "Install Model 3 " \
             2 "Model 3 Info   " \
+	    - " ___          _               " \
+            - "| _ \  __   _| |_   _ _   ___ " \
+            - "|   / |-_) |_   _| | __| / _ \" \
+            - "|_|_\ \___|  |_|   |_|   \___/" \
+            - " __                    _      " \
+            - "|   \   ___  __ __ _  | |  ___" \
+            - "| |) / / -_) \ V /| | | | (_-<" \
+            - "|___/  \___|  \_/ |_| |_| /__/" \
             2>&1 > /dev/tty)
 
         case "$choice" in
             1) install_sm3  ;;
             2) info_sm3     ;;
+	    -) no ;;
             *) break       ;;
         esac
     done

@@ -13,7 +13,7 @@ function sm3_menu() {
             --ok-label Select --cancel-label Exit-Installer \
             --menu "MODEL 3 INSTALLER" 25 40 40 \
             1 "Install Model 3 " \
-            2 "Devils Box Info   " \
+            2 "Model 3 Info   " \
             2>&1 > /dev/tty)
 
         case "$choice" in
@@ -25,6 +25,9 @@ function sm3_menu() {
 }
 
 function install_sm3(){
+if [ -d "/opt/retropie/configs/emulators/supermodel" ]; then sudo rm -R /opt/retropie/emulators/supermodel/; fi
+if [ -d "/opt/retropie/configs/model3" ]; then sudo rm -R /opt/retropie/configs/model3/; fi
+
 sleep 5
 echo "
 Installing/Checking For Dependencies

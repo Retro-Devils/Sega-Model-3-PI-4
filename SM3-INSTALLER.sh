@@ -24,7 +24,7 @@ function sm3_menu() {
     done
 }
 
-function install_sm3
+function install_sm3(){
 sleep 5
 echo "
 Installing/Checking For Dependencies
@@ -98,7 +98,8 @@ sleep 5
 }
 
 function info_sm3(){
-
+blah blah 
+hold place here 
 }
 
 

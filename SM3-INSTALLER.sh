@@ -12,7 +12,7 @@ function sm3_menu() {
         choice=$(dialog --backtitle "$BACKTITLE" --title "SEGA MODEL 3 INSTALLER V1.2 " \
             --ok-label Select --cancel-label Exit-Installer \
             --menu "MODEL 3 INSTALLER" 25 40 40 \
-            1 "Install/Update Devils Box " \
+            1 "Install Model 3 " \
             2 "Devils Box Info   " \
             2>&1 > /dev/tty)
 
@@ -89,17 +89,15 @@ Please Add Below To ~/.emuationstation/es-systems.cfg
 ----------------------------------------
 Add Your Roms To ~/RetroPie/roms/model3/
 ----------------------------------------" 0 0
-sleep 5
-
-echo "Drugs are bad mmmkay " 
-sleep 2
-echo "Thanks for using have a wonderful and retro day" 
-sleep 5
 }
 
 function info_sm3(){
-blah blah 
-hold place here 
+dialog  --sleep 1 --title "SM3 INFO MESSAGE" --msgbox " 
+Sega Model 3 is an arcade platform released in 1996 as the successor to Sega Model 2. 
+Model 3 continued several arcade games series established on previous Sega arcade boards.
+With games such as; Daytona USA 2, Sega Rally 2, Virtua Fighter 3 and Star Wars Trilogy Arcade. 
+------------------------------------------------------------------------
+This installer setups Retropie to run Model 3" 0 0
 }
 
 

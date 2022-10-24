@@ -98,7 +98,7 @@ CONTENT1="\t<system>\n\t\t  <name>model3</name>\n\t\t  <fullname>Sega Model 3</f
 C1=$(echo $CONTENT1 | sed 's/\//\\\//g')
 if grep -q model3 "$HOME/.emulationstation/es_systems.cfg"; then echo "es_systems.cfg entry confirmed"
 else
-	sed "/<\/gameList>/ s/.*/${C1}\n&/" $HOME/.emulationstation/es_systems.cfg > $HOME/temp
+	sed "/<\/es-systems>/ s/.*/${C1}\n&/" $HOME/.emulationstation/es_systems.cfg > $HOME/temp
 	cat $HOME/temp > $HOME/.emulationstation/es_systems.cfg
 	rm -f $HOME/temp
 fi

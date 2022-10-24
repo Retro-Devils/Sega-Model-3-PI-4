@@ -76,7 +76,7 @@ sudo rm -f /opt/retropie/emulators/Supermodel.7z
 sudo rm -f /opt/retropie/configs/Sega3-ES-Config.zip
 if [ ! -s "$HOME/.emulationstation/es_systems.cfg" ]; then sudo rm -f $HOME/.emulationstation/es_systems.cfg; fi
 if [ ! -f "$HOME/.emulationstation/es_systems.cfg" ]; then cp $HOME/.emulationstation/es_systems.cfg $HOME/RetroPie/retropiemenu/gamelist.xml; fi
-CONTENT1="\t<game>\n\t\t<path>./Devils-Box.sh</path>\n\t\t<name>Devils-Box</name>\n\t\t<desc>The Retro Devils Tool Box - A fully fuctional script to get even the newbies started up with ease, able to download roms and artwork to their proper places, Mugen and Sega Model 3 emulators, themes and music tools, plus much, much more.</desc>\n\t\t<image>./icons/Devils-Box.png</image>\n\t\t<releasedate>20220105T173842</releasedate>\n\t\t<developer>The Retro Devils</developer>\n\t\t<publisher>The Retro Devils</publisher>\n\t\t<genre>Devils-Box Script</genre>\n\t</game>"
+CONTENT1="\t<system>\n\t\t<path>./Devils-Box.sh</path>\n\t\t<name>Devils-Box</name>\n\t\t<desc>The Retro Devils Tool Box - A fully fuctional script to get even the newbies started up with ease, able to download roms and artwork to their proper places, Mugen and Sega Model 3 emulators, themes and music tools, plus much, much more.</desc>\n\t\t<image>./icons/Devils-Box.png</image>\n\t\t<releasedate>20220105T173842</releasedate>\n\t\t<developer>The Retro Devils</developer>\n\t\t<publisher>The Retro Devils</publisher>\n\t\t<genre>Devils-Box Script</genre>\n\t</game>"
 C1=$(echo $CONTENT1 | sed 's/\//\\\//g')
 if grep -q Devils-Box.sh "$HOME/.emulationstation/es_systems.cfg"; then echo "es_systems.xml entry confirmed"
 else

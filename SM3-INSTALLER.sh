@@ -11,7 +11,7 @@ function sm3_menu() {
     while true; do
         choice=$(dialog --backtitle "$BACKTITLE" --title "SEGA MODEL 3 INSTALLER V1.2 " \
             --ok-label Select --cancel-label Exit-Installer \
-            --menu "MODEL 3 INSTALLER" 25 40 40 \
+            --menu "MODEL 3 INSTALLER" 25 50 40 \
             1 "Install Model 3 " \
             2 "Model 3 Info   " \
 	    - "__________        __                  " \

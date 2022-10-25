@@ -117,7 +117,7 @@ else
 fi
 }
 
-function finisH_sm3(){
+function finish_sm3(){
 dialog  --sleep 1 --title "SM3 EXIT MESSAGE" --msgbox " 
 THANKS FOR INSTALLING 
 ADD YOUR ROMS TO HOME/PI/RETROPIE/ROMS/MODEL3
